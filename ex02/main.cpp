@@ -42,6 +42,10 @@ int main () {
     std::cout << "arr[2] = " << arr[2] << std::endl;
     std::cout << std::endl;
     std::cout << "\033[34minvalid index\033[0m" <<std::endl;
-    std::cout << "arr[10] = " << arr[10] << std::endl;
+    try {
+        std::cout << "arr[10] = " << arr[10] << std::endl;
+    } catch (std::exception &e) {
+        std::cerr << e.what() << std::endl;
+    }
     std::cout << std::endl;
 }
