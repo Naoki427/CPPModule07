@@ -22,4 +22,10 @@ int main() {
        std::cout << "Arr[" << i <<"] = " << arr[i] << std::endl;
     }
     std::cout << std::endl;
+
+    std::cout << "\033[33m----------Const strs put----------\033[0m" << std::endl;
+    const std::string strs[5] = {"One,", "Two,", "Three,", "Four,", "Five\n"};
+    ::iter(strs,5,put);
+    std::cout << std::endl;
+
 }
